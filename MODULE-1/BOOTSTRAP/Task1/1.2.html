@@ -1,0 +1,30 @@
+<!-- Exercise 1.2: Using locally downloaded Bootstrap files in an HTML page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1.2 - Local Bootstrap Files</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="text-success">Bootstrap from Local Files</h1>
+        <p class="lead">This page uses Bootstrap 5 loaded from downloaded local files.</p>
+        <div class="alert alert-info" role="alert">
+            Bootstrap loaded from: <code>bootstrap/css/bootstrap.min.css</code>
+        </div>
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">NPM Setup Steps</h5>
+                <ol>
+                    <li>Run <code>npm init -y</code> to create package.json</li>
+                    <li>Run <code>npm install bootstrap</code> to install Bootstrap</li>
+                    <li>Link from <code>node_modules/bootstrap/dist/css/bootstrap.min.css</code></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

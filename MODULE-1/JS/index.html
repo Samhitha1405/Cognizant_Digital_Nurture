@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technova Community Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="glass">
+        <h1>TECHNOVA 2026</h1>
+        <p>MRECW Women's Community Event Portal</p>
+    </header>
+
+    <!-- Filter Section -->
+    <section class="glass">
+        <h2>Filter Events</h2>
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="Music">Music</option>
+            <option value="Technology">Technology</option>
+            <option value="Dance">Dance</option>
+            <option value="Art">Art</option>
+            <option value="Education">Education</option>
+        </select>
+        <br><br>
+        <input type="text" id="searchBox" placeholder="Search events by name">
+    </section>
+
+    <!-- Events Section -->
+    <section class="glass">
+        <h2>Upcoming Events</h2>
+        <div id="eventContainer"></div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="glass">
+        <h2>Register for Event</h2>
+        <form id="registrationForm">
+            <input type="text" name="name" placeholder="Enter Name">
+            <span id="nameError" class="error"></span>
+
+            <input type="email" name="email" placeholder="Enter Email">
+            <span id="emailError" class="error"></span>
+
+            <!--
+                FIX: Removed hardcoded "Music Night" option (0 seats available).
+                Ideally this dropdown should be populated dynamically from the
+                events array using JavaScript so it always reflects available events.
+            -->
+            <select name="event">
+                <option value="">Select Event</option>
+                <option value="Coding Workshop">Coding Workshop</option>
+                <option value="Dance Fiesta">Dance Fiesta</option>
+                <option value="Art Expo">Art Expo</option>
+                <option value="Music Night">Music Night</option>
+                <option value="Tech Talk">Tech Talk</option>
+            </select>
+            <span id="eventError" class="error"></span>
+
+            <button type="submit" id="registerBtn">Register</button>
+        </form>
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- Loading Spinner -->
+    <div id="loading">Loading events...</div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

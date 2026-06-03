@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technova 2026 | MRECW Women's Event Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+                url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1920");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+        /* Glass Morphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        /* Navigation Section */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 18px;
+            margin: 15px;
+            position: sticky;
+            top: 10px;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffd6ff;
+            transform: scale(1.08);
+        }
+        /* Welcome Banner */
+        #welcomeBanner {
+            width: 85%;
+            margin: 20px auto;
+            padding: 35px;
+            text-align: center;
+        }
+        #welcomeBanner h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #welcomeBanner p {
+            font-size: 20px;
+        }
+        .highlight {
+            color: #ffe066;
+            font-weight: bold;
+        }
+        /* Common Section Styling */
+        section {
+            width: 85%;
+            margin: 20px auto;
+            padding: 25px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 35px;
+        }
+        /* Gallery */
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        .event-img {
+            width: 250px;
+            height: 170px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            transition: 0.4s;
+        }
+        .event-img:hover {
+            transform: scale(1.05);
+        }
+        td p {
+            font-weight: bold;
+        }
+        /* Form Section */
+        form {
+            width: 60%;
+            margin: auto;
+            padding: 25px;
+        }
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            outline: none;
+            box-sizing: border-box;
+        }
+        option {
+            color: black;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: #eee;
+        }
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px;
+            background: linear-gradient(45deg, #E65100, #00796B);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        /* Video Section */
+        video {
+            width: 100%;
+            border-radius: 20px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 18px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Section -->
+
+    <nav class="glass">
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#register">Register</a>
+        <a href="#videoInvite">Invite</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Welcome Banner Section -->
+
+    <div id="welcomeBanner" class="glass">
+        <h1>TECHNOVA 2026</h1>
+        <p>
+            Official Women's Fest Portal of
+            <span class="highlight">
+                MRECW (Malla Reddy Engineering College for Women)
+            </span>
+        </p>
+        <p>
+            Empowering creativity, innovation, leadership, and technology.
+        </p>
+    </div>
+    <!-- About Section -->
+
+    <section id="home" class="glass">
+        <h2>About Technova</h2>
+        <p style="font-size:18px;line-height:1.8;text-align:center;">
+            Technova is the annual technical and cultural fest organized
+            by MRECW exclusively for women. The event features coding contests,
+            dance performances, workshops, innovation expos, music nights,
+            and inspiring activities.
+        </p>
+    </section>
+    <!-- Event Gallery Section -->
+
+    <section id="events" class="glass">
+        <h2>Past Event Highlights</h2>
+        <table>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000"
+                        alt="Dance Event" title="Dance Event" class="event-img">
+                    <p>Dance Performance</p>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000"
+                        alt="Coding Contest" title="Coding Contest" class="event-img">
+                    <p>Coding Contest</p>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1000"
+                        alt="Music Night" title="Music Night" class="event-img">
+                    <p>Music Night</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=1000"
+                        alt="Art Exhibition" title="Art Exhibition" class="event-img">
+                    <p>Art Exhibition</p>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000" alt="Workshop"
+                        title="Workshop" class="event-img">
+                    <p>Workshop</p>
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1000"
+                        alt="Sports Event" title="Sports Event" class="event-img">
+                    <p>Sports Activities</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <!-- Registration Form Section -->
+    <section id="register" class="glass">
+        <h2>Register for Technova 2026</h2>
+        <form class="glass" onsubmit="showMessage(); return false;">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your full name" required autofocus>
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email" required>
+            <label>Phone Number</label>
+            <input type="text" id="phone" placeholder="Enter 10 digit number" onblur="validatePhone()" required>
+            <label>Select Event</label>
+            <select id="eventType" onchange="showFee(this.value); savePreference()">
+                <option value="">Choose Event</option>
+                <option value="100">
+                    Dance Competition - ₹100
+                </option>
+                <option value="200">
+                    Coding Contest - ₹200
+                </option>
+                <option value="150">
+                    Music Night - ₹150
+                </option>
+            </select>
+            <!-- Fee Display -->
+            <p id="fee"></p>
+            <!-- Feedback Section -->
+
+            <label>Feedback</label>
+            <textarea id="feedback" rows="5" placeholder="Write your feedback..." onkeyup="countChars()"></textarea>
+            <!-- Character Counter -->
+            <p>
+                Characters Typed:
+                <span id="count">0</span>
+            </p>
+            <button type="submit" onclick="confirmSubmit()">
+                Register Now
+            </button>
+            <br><br>
+            <output id="result"></output>
+        </form>
+    </section>
+
+    <!-- Interactive Event Preview -->
+
+    <section class="glass">
+        <h2>Interactive Event Preview</h2>
+        <p style="text-align:center;">
+            Double click the image to enlarge it.
+        </p>
+        <center>
+            <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=1000" width="300"
+                ondblclick="enlargeImage(this)" class="event-img">
+        </center>
+    </section>
+
+    <!-- Video Invitation Section -->
+
+    <section id="videoInvite" class="glass">
+        <h2>Technova 2026 Video Invitation</h2>
+        <video controls autoplay muted oncanplay="videoReady()">
+            <source src="vid-invite.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p id="videoMessage"></p>
+    </section>
+
+    <!-- Geolocation Section -->
+
+    <section class="glass">
+        <h2>Find Nearby Event Location</h2>
+        <center>
+            <button onclick="findLocation()">
+                Find Nearby Events
+            </button>
+        </center>
+        <p id="location" style="text-align:center;margin-top:20px;"></p>
+    </section>
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="glass">
+        <h2>Contact Us</h2>
+        <p style="text-align:center;line-height:1.8;">
+
+            MRECW Women's Event Committee
+
+            <br><br>
+
+            Email:
+            technova@mrecw.edu.in
+
+            <br><br>
+
+            Phone:
+            +91 9876543210
+        </p>
+    </section>
+    <!-- Footer Section -->
+    <footer class="glass">
+        <p>2026 Technova | MRECW Women's Event Portal</p>
+    </footer>
+
+    <!-- JavaScript Section -->
+    <script>
+        /* Registration Confirmation */
+
+        function showMessage() {
+            document.getElementById("result").innerHTML =
+                "Registration Successful for Technova 2026!";
+        }
+        /* Phone Validation */
+
+        function validatePhone() {
+            let phone =
+                document.getElementById("phone").value;
+            if (phone.length != 10) {
+                alert("Phone number must contain 10 digits");
+            }
+        }
+        /* Event Fee Display */
+
+        function showFee(fee) {
+            document.getElementById("fee").innerHTML =
+                "Selected Event Fee: ₹" + fee;
+        }
+        /* Submit Confirmation */
+
+        function confirmSubmit() {
+            alert("Thank you for registering!");
+        }
+        /* Double Click Event */
+
+        function enlargeImage(img) {
+            img.style.width = "500px";
+            img.style.height = "350px";
+        }
+        /* Character Counter */
+
+        function countChars() {
+            let text =
+                document.getElementById("feedback").value;
+            document.getElementById("count").innerHTML =
+                text.length;
+        }
+        /* Video Ready Event */
+
+        function videoReady() {
+            document.getElementById("videoMessage").innerHTML =
+                "Video ready to play";
+        }
+
+        /* Before Unload Warning */
+
+        window.onbeforeunload = function () {
+            return "Your registration form is unfinished.";
+        };
+        /* Save Preferences */
+
+        function savePreference() {
+            let event =
+                document.getElementById("eventType").value;
+            localStorage.setItem(
+                "preferredEvent",
+                event
+            );
+        }
+        /* Retrieve Preferences */
+
+        window.onload = function () {
+            let savedEvent = localStorage.getItem("preferredEvent");
+            if (savedEvent) {
+                document.getElementById("eventType").value = savedEvent;
+            }
+        };
+        /* Geolocation Function */
+
+        function findLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    showPosition,
+                    showError,
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 5000
+                    }
+                );
+            } else {
+                alert("Geolocation not supported");
+            }
+        }
+        /* Show Coordinates */
+
+        function showPosition(position) {
+            document.getElementById("location").innerHTML =
+                "Latitude: " +
+                position.coords.latitude +
+                "<br>Longitude: " +
+                position.coords.longitude;
+        }
+        /* Geolocation Error */
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("Permission Denied");
+                    break;
+                case error.TIMEOUT:
+                    alert("Location Request Timed Out");
+                    break;
+                default:
+                    alert("Unknown Error");
+            }
+        }
+        /* Console Debugging */
+        console.log(
+            "Technova 2026 Portal Loaded Successfully"
+        );
+    </script>
+</body>
+</html>

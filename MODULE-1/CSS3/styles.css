@@ -1,0 +1,257 @@
+/*Universal Selector Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*Body Styling*/
+body{
+    font-family:'Poppins',sans-serif;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.7)
+    ),
+    url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1920");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:white;
+    padding:20px;
+}
+/*Glass Morphism Styling*/
+.glass{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    -webkit-backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+/*Navigation Styles*/
+nav{
+    margin-bottom:20px;
+    padding:15px;
+}
+.navMenu{
+    list-style-type:none;
+    list-style-position:inside;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+.navMenu li{
+    padding:10px;
+    margin:5px;
+}
+/*Link Styling*/
+a{
+    text-decoration:none;
+    font-weight:bold;
+}
+a:link{
+    color:white;
+}
+a:hover{
+    color:#ffd166;
+}
+a:active{
+    color:red;
+}
+a:visited{
+    color:#d4c1ff;
+}
+/*Header Styles*/
+#mainHeader{
+    text-align:center;
+    padding:40px;
+    margin-bottom:20px;
+}
+.main-heading{
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:55px;
+}
+/*Paragraph Styles*/
+.text{
+    line-height:1.8;
+    margin:20px;
+    text-align:center;
+    font-size:18px;
+}
+/*Grouping Selector*/
+h3,
+p{
+    text-align:center;
+    line-height:1.8;
+}
+/*Section Styling*/
+section{
+    margin-bottom:20px;
+    padding:25px;
+}
+/*Gradient Heading Styles — changed from purple/pink to teal/blue*/
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    padding:12px;
+    background:linear-gradient(
+        to right,
+        #00b4d8,
+        #0077b6
+    );
+    border-radius:10px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+/*Highlight Text Styling*/
+.highlight{
+    font-weight:bold;
+    font-style:italic;
+    color:#ffe066;
+}
+/*Event Container Layout*/
+.eventContainer{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+/*Event Card Styling*/
+.eventCard{
+    width:300px;
+    padding:20px;
+    margin:10px;
+    border:2px solid rgba(255,255,255,0.2);
+    outline:1px solid rgba(255,255,255,0.2);
+    transition:0.3s;
+}
+.eventCard:hover{
+    transform:translateY(-5px);
+}
+/*Event Image Styling*/
+.eventCard img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+/*Form Styling*/
+form{
+    width:60%;
+    margin:auto;
+}
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:10px;
+    background:rgba(255,255,255,0.15);
+    color:white; /* ensures typed text is white */
+}
+/*Placeholder text color*/
+input::placeholder,
+textarea::placeholder{
+    color:rgba(255,255,255,0.6);
+}
+/*Select Option Styling*/
+option{
+    color:black;
+}
+/*Form Focus Styling*/
+input:focus,
+textarea:focus,
+select:focus{
+    outline:3px solid #ffd166;
+}
+/*CTA Button wrapper — centers the button*/
+.btn-wrapper{
+    display:flex;
+    justify-content:center;
+}
+/*CTA Button Styling — changed to teal*/
+.cta-button{
+    background-color:#00b4d8;
+    color:white;
+    border:none;
+    padding:12px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+    font-family:'Poppins',sans-serif;
+    font-size:16px;
+    font-weight:600;
+}
+.cta-button:hover{
+    transform:scale(1.05);
+    background-color:#0096c7;
+}
+/*Table Styling — header changed to teal*/
+table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:center;
+}
+th,
+td{
+    border:1px solid white;
+    padding:15px;
+}
+th{
+    background-color:#00b4d8;
+}
+tr:nth-child(even){
+    background-color:rgba(255,255,255,0.1);
+}
+/*Community Bulletin — single centered paragraph*/
+.newsArticle{
+    line-height:2;
+    text-align:center;
+    max-width:800px;
+    margin:0 auto;
+}
+/*Visibility Hidden Example*/
+.hiddenBox{
+    visibility:hidden;
+    background:red;
+    padding:20px;
+    margin-top:10px;
+}
+/*Display None Example*/
+.noneBox{
+    display:none;
+    background:blue;
+    padding:20px;
+}
+/*Footer Styling*/
+footer{
+    text-align:center;
+    padding:20px;
+}
+/*Responsive Design*/
+@media screen and (max-width:768px){
+    .navMenu{
+        flex-direction:column;
+        align-items:center;
+    }
+    .eventContainer{
+        flex-direction:column;
+        align-items:center;
+    }
+    .eventCard{
+        width:90%;
+    }
+    .main-heading{
+        font-size:8vw;
+    }
+    h2{
+        font-size:5vw;
+    }
+    form{
+        width:100%;
+    }
+}

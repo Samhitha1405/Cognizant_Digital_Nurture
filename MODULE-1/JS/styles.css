@@ -1,0 +1,116 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1920");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    padding: 20px;
+}
+
+/* Glass Morphism Styling */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+}
+
+/* Heading Styling */
+h1,
+h2 {
+    margin-bottom: 20px;
+}
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+select option {
+    background: #333;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #7f5eff;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #6a4de0;
+}
+
+/* Event Card Styling */
+.eventCard {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+}
+
+.eventCard button {
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: auto;
+    padding: 8px 20px;
+}
+
+/* Error Styling */
+.error {
+    color: #ff7b7b;
+    font-size: 14px;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    min-height: 18px;
+}
+
+/* Loading Spinner */
+#loading {
+    text-align: center;
+    font-size: 20px;
+    display: none;
+}
+
+/* Form Message */
+#formMessage {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
